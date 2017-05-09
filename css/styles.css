@@ -1,0 +1,197 @@
+.nav{
+	display:block;
+	list-style:none;
+	text-align:center;
+	line-height:20px;
+	padding:10px;
+}
+
+.nav li{
+	
+	display:block;
+	background:white;
+	padding:5px;
+	margin:5px;
+}
+h1{
+	text-align:center;
+}
+
+.profile-pic{
+	width:100%;
+	height:auto;
+}
+
+.about{
+	text-align:center;
+	padding:3px;
+}
+
+.top{
+	background:lightgrey;
+}
+html{
+	font-family: 'Raleway', sans-serif;
+}
+
+h2{
+	text-align:center;
+}
+
+.thumbnails{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	text-align:center;
+}
+
+.thumbnails img{
+	width:100%;
+	height:auto;
+	display:inline-block;
+	margin:auto;
+	padding:auto;
+}
+
+a:link {
+	color:black;
+	text-decoration: none;
+}
+
+.bottom{
+	background:lightgrey;
+}
+
+h3, p{
+	text-align:center;
+}
+
+.contact-info {
+	list-style:none;
+	padding:5px;
+	margin:5px;
+	text-align:center;
+}
+
+.footer ul{
+	text-align:center;
+	display:flex;
+	list-style:none;
+	margin:auto;
+	padding:auto;
+	border-top: 1px solid black;
+	
+}
+
+.BTT {
+	position:absolute;
+	right:0;
+	padding-right:5px;
+	
+}
+
+.Fname{
+	position:absolute;
+	left:0;
+	padding-left:5px;
+}
+.Fname, .BTT{
+	padding-top:3px;
+}
+
+.Fhome, .Fport, .Fcont{
+	display:none;
+}
+
+@media screen and (min-width: 400px) {
+	.top{
+	display:inline-block;
+	width:100%;
+	}
+	
+	.nav li{
+	display:inline-block;	
+	}
+		
+	.profile-pic{
+	float:right;
+	display:inline-block;
+	width:35%;
+	height:auto;
+	margin:3px;
+	padding:3px;
+	}
+	
+	.about{
+	display:block;
+	margin:auto;
+	padding:auto;
+	}
+			
+	.thumbnails{
+	-webkit-column-count: 2; 
+    -moz-column-count: 2; 
+    column-count: 2;
+	}
+	
+	.BTT{
+	display:none;
+	}
+	
+	.Fhome, .Fport, .Fcont{
+	display:inline;
+	margin:3px;
+	padding-top:3px;
+	
+	}
+	
+	.Fhome{
+		margin-left:auto;
+	}
+
+}
+
+@media screen and (min-width: 800px) {
+	
+	.nav {
+	
+	margin:auto;
+	padding:auto;
+	overflow:hidden;
+	float:right;
+	}
+	
+	.nav li{
+	width:100%;
+	background:none;
+	display:inline;
+	
+	}
+	
+	h1{
+	display:inline-block;
+	padding:3px;
+	margin:3px;
+	float:left;
+	}
+	
+	
+	.about-pic{
+	display:inline-block;	
+	}
+	
+	.about{
+	display:inline-block;
+	width:50%;
+	height:auto;
+	font-size:40px;
+	margin:auto;
+	padding:auto;
+	}
+		
+	.thumbnails{
+	-webkit-column-count: 3; 
+    -moz-column-count: 3; 
+    column-count: 3;
+	}
+}
