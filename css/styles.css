@@ -15,10 +15,14 @@
 }
 h1{
 	text-align:center;
+	margin:0;
 }
 
 .profile-pic{
-	width:100%;
+	
+	width:50%;
+	display:flex;
+	margin:auto;
 	height:auto;
 }
 
@@ -50,7 +54,7 @@ h2{
 	height:auto;
 	display:inline-block;
 	margin:auto;
-	padding:auto;
+	padding:1px;
 }
 
 a:link {
@@ -78,10 +82,11 @@ h3, p{
 	display:flex;
 	list-style:none;
 	margin:auto;
-	padding:auto;
+	padding:1px;
 	border-top: 1px solid black;
 	
 }
+
 
 .BTT {
 	position:absolute;
@@ -96,14 +101,15 @@ h3, p{
 	padding-left:5px;
 }
 .Fname, .BTT{
-	padding-top:3px;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
 .Fhome, .Fport, .Fcont{
 	display:none;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 768px) {
 	.top{
 	display:inline-block;
 	width:100%;
@@ -116,7 +122,7 @@ h3, p{
 	.profile-pic{
 	float:right;
 	display:inline-block;
-	width:35%;
+	max-width:50%;
 	height:auto;
 	margin:3px;
 	padding:3px;
@@ -151,12 +157,12 @@ h3, p{
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
 	
 	.nav {
 	
 	margin:auto;
-	padding:auto;
+	padding:3px;
 	overflow:hidden;
 	float:right;
 	}
@@ -170,25 +176,34 @@ h3, p{
 	
 	h1{
 	display:inline-block;
-	padding:3px;
-	margin:3px;
+	
+	margin:0 auto;
+	padding-left:3px;
 	float:left;
 	}
 	
+	.about, .profile-pic{
+	margin:auto;
 	
-	.about-pic{
-	display:inline-block;	
+	}
+	
+	.profile-pic{
+		width:30%;
+		height:auto;
+		padding-left:20px;
+		padding-bottom:5px;
+		margin-top:30px;
 	}
 	
 	.about{
-	display:inline-block;
-	width:50%;
-	height:auto;
-	font-size:40px;
-	margin:auto;
-	padding:auto;
-	}
+	
+		width:auto;
+		font-size:25px;
+		margin-top:30px;
 		
+		padding:3px 3px;
+	}
+	
 	.thumbnails{
 	-webkit-column-count: 3; 
     -moz-column-count: 3; 
